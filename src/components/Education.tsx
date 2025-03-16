@@ -1,30 +1,22 @@
-
 import { AnimatedSection } from './AnimatedSection';
-
 export const Education = () => {
-  const certificates = [
-    {
-      title: "Computer Programming and Analysis - Advanced Diploma",
-      institution: "George Brown College, Toronto",
-      period: "2023 - 2025",
-      description: "Advanced programming concepts, system analysis, database management, and software development methodologies."
-    },
-    {
-      title: "Web Development Fundamentals",
-      institution: "Online Certification",
-      period: "2022",
-      description: "HTML5, CSS3, JavaScript, and responsive design principles for modern web applications."
-    },
-    {
-      title: "Introduction to AI and Machine Learning",
-      institution: "Online Certification",
-      period: "2023",
-      description: "Fundamentals of artificial intelligence, machine learning algorithms, and neural networks."
-    }
-  ];
-
-  return (
-    <section id="education" className="py-24 bg-secondary/50 relative overflow-hidden">
+  const certificates = [{
+    title: "Computer Programming and Analysis - Advanced Diploma",
+    institution: "George Brown College, Toronto",
+    period: "2023 - 2025",
+    description: "Advanced programming concepts, system analysis, database management, and software development methodologies."
+  }, {
+    title: "Web Development Fundamentals",
+    institution: "Online Certification",
+    period: "2022",
+    description: "HTML5, CSS3, JavaScript, and responsive design principles for modern web applications."
+  }, {
+    title: "Introduction to AI and Machine Learning",
+    institution: "Online Certification",
+    period: "2023",
+    description: "Fundamentals of artificial intelligence, machine learning algorithms, and neural networks."
+  }];
+  return <section id="education" className="py-24 bg-secondary/50 relative overflow-hidden">
       <div className="section-container">
         <AnimatedSection animation="fade-in-up" className="space-y-2 mb-12">
           <h2 className="section-title">Academic Credentials</h2>
@@ -34,11 +26,7 @@ export const Education = () => {
         </AnimatedSection>
 
         <div className="grid md:grid-cols-12 gap-8">
-          <AnimatedSection 
-            animation="fade-in-up" 
-            delay={100}
-            className="md:col-span-6 space-y-8"
-          >
+          <AnimatedSection animation="fade-in-up" delay={100} className="md:col-span-6 space-y-8">
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold font-display">Academic Achievements</h3>
               
@@ -52,7 +40,9 @@ export const Education = () => {
                       <span className="font-medium">3.32/4.0</span>
                     </div>
                     <div className="w-full bg-secondary rounded-full h-2">
-                      <div className="bg-primary h-2 rounded-full" style={{ width: '83%' }}></div>
+                      <div className="bg-primary h-2 rounded-full" style={{
+                      width: '83%'
+                    }}></div>
                     </div>
                   </div>
                 </div>
@@ -66,7 +56,9 @@ export const Education = () => {
                       <span className="font-medium">5.0/5.0</span>
                     </div>
                     <div className="w-full bg-secondary rounded-full h-2">
-                      <div className="bg-primary h-2 rounded-full" style={{ width: '100%' }}></div>
+                      <div className="bg-primary h-2 rounded-full" style={{
+                      width: '100%'
+                    }}></div>
                     </div>
                   </div>
                 </div>
@@ -76,19 +68,19 @@ export const Education = () => {
                   <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 text-primary shrink-0">
-                        <polyline points="20 6 9 17 4 12"/>
+                        <polyline points="20 6 9 17 4 12" />
                       </svg>
                       <span>Dean's List for Academic Excellence (Fall 2023)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 text-primary shrink-0">
-                        <polyline points="20 6 9 17 4 12"/>
+                        <polyline points="20 6 9 17 4 12" />
                       </svg>
                       <span>Perfect Attendance Award (Winter 2024)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 text-primary shrink-0">
-                        <polyline points="20 6 9 17 4 12"/>
+                        <polyline points="20 6 9 17 4 12" />
                       </svg>
                       <span>Excellence in Programming Competition (2024)</span>
                     </li>
@@ -104,36 +96,24 @@ export const Education = () => {
               </p>
               <button className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors text-sm font-medium">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                  <polyline points="7 10 12 15 17 10"/>
-                  <line x1="12" y1="15" x2="12" y2="3"/>
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
                 </svg>
-                <span>View Transcript</span>
+                <span className="">View Transcript</span>
               </button>
             </div>
           </AnimatedSection>
 
-          <AnimatedSection 
-            animation="fade-in-up" 
-            delay={200}
-            className="md:col-span-6 space-y-6"
-          >
+          <AnimatedSection animation="fade-in-up" delay={200} className="md:col-span-6 space-y-6">
             <h3 className="text-2xl font-semibold font-display">Certificates & Degrees</h3>
             
             <div className="space-y-6">
-              {certificates.map((cert, index) => (
-                <div 
-                  key={index} 
-                  className="glass p-6 rounded-2xl border border-border/50 transition-all hover:shadow-md"
-                >
-                  <div className="flex justify-between items-start">
-                    <h4 className="font-medium text-lg">{cert.title}</h4>
-                    <span className="tag bg-secondary">{cert.period}</span>
-                  </div>
-                  <p className="text-sm text-primary mt-1">{cert.institution}</p>
-                  <p className="text-muted-foreground text-sm mt-3">{cert.description}</p>
-                </div>
-              ))}
+              {certificates.map((cert, index) => <div key={index} className="glass p-6 rounded-2xl border border-border/50 transition-all hover:shadow-md">
+                  
+                  
+                  
+                </div>)}
               
               <div className="glass p-6 rounded-2xl border border-border/50 bg-gradient-to-br from-blue-50 to-transparent">
                 <h4 className="font-medium text-lg">Additional Learning</h4>
@@ -145,8 +125,8 @@ export const Education = () => {
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full flex items-center justify-center bg-white shadow-sm">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <rect width="18" height="18" x="3" y="3" rx="2"/>
-                        <path d="M9 9h6v6H9z"/>
+                        <rect width="18" height="18" x="3" y="3" rx="2" />
+                        <path d="M9 9h6v6H9z" />
                       </svg>
                     </div>
                     <div>
@@ -158,7 +138,7 @@ export const Education = () => {
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full flex items-center justify-center bg-white shadow-sm">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+                        <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
                       </svg>
                     </div>
                     <div>
@@ -170,8 +150,8 @@ export const Education = () => {
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full flex items-center justify-center bg-white shadow-sm">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"/>
-                        <line x1="2" x2="22" y1="20" y2="20"/>
+                        <path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6" />
+                        <line x1="2" x2="22" y1="20" y2="20" />
                       </svg>
                     </div>
                     <div>
@@ -185,6 +165,5 @@ export const Education = () => {
           </AnimatedSection>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

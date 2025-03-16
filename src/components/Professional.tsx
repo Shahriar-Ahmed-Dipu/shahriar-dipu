@@ -16,7 +16,7 @@ export const Professional = () => {
             <div className="space-y-6">
               <div className="glass p-6 rounded-2xl border border-border/50">
                 <div className="flex flex-wrap gap-2 justify-between mb-2">
-                  <h4 className="font-medium text-lg">Junior Web Developer</h4>
+                  <h4 className="font-medium text-lg">Junior Frontend Designer</h4>
                   <span className="tag bg-secondary">2022 - Present</span>
                 </div>
                 <p className="text-primary text-sm mb-3">Fiverr.com</p>
@@ -91,28 +91,8 @@ export const Professional = () => {
           </AnimatedSection>
 
           <AnimatedSection animation="fade-in-up" delay={200} className="md:col-span-5 space-y-8">
-            <h3 className="text-2xl font-semibold font-display">Community Service</h3>
-            <div className="glass p-6 rounded-2xl border border-border/50">
-              <div className="space-y-5">
-                <div>
-                  <h4 className="font-medium">Tech Mentor</h4>
-                  <p className="text-sm text-primary">Local Community Center</p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Volunteered as a mentor for youths interested in programming, 
-                    teaching basic coding concepts and helping with projects.
-                  </p>
-                </div>
-                
-                <div>
-                  <h4 className="font-medium">Web Development Workshop Leader</h4>
-                  <p className="text-sm text-primary">Public Library Coding Program</p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Conducted free workshops on web development basics for beginners, 
-                    focusing on HTML, CSS, and introductory JavaScript.
-                  </p>
-                </div>
-              </div>
-            </div>
+            
+            
             
             <h3 className="text-2xl font-semibold font-display">Awards & Recognition</h3>
             <div className="glass p-6 rounded-2xl border border-border/50">
