@@ -103,7 +103,7 @@ export const Footer = () => {
                 </div>
                 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">Message</label>
+                  <label htmlFor="message" className="text-sm font-medium">Shahriar Ahmed Dipu</label>
                   <textarea id="message" rows={5} className="w-full px-4 py-2.5 rounded-lg border border-border bg-secondary/30 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all resize-none" placeholder="Your message"></textarea>
                 </div>
                 
