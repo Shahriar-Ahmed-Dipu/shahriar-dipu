@@ -96,11 +96,11 @@ export const Projects = () => {
               <div className="pt-2">
                 <h4 className="text-lg font-medium mb-2">Technologies Used</h4>
                 <div className="flex flex-wrap gap-2">
-                  <span className="tag">React</span>
-                  <span className="tag">Node.js</span>
-                  <span className="tag">Express</span>
+                  <span className="tag">HTML</span>
+                  <span className="tag">CSS</span>
+                  <span className="tag">TAILWIND</span>
                   <span className="tag">MongoDB</span>
-                  <span className="tag">JWT Authentication</span>
+                  <span className="tag">PHP</span>
                 </div>
               </div>
             </div>
