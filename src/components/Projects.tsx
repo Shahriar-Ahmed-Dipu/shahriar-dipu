@@ -1,7 +1,6 @@
 import { AnimatedSection } from './AnimatedSection';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
-
 type Project = {
   id: number;
   title: string;
@@ -11,38 +10,33 @@ type Project = {
   category: 'web' | 'mobile';
   link?: string;
 };
-
 export const Projects = () => {
   const [activeFilter, setActiveFilter] = useState<string>('all');
-  
-  const projects: Project[] = [
-    {
-      id: 1,
-      title: "E-Commerce Website",
-      description: "A modern one-page e-commerce website with product showcase, categories, and responsive design.",
-      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      category: 'web',
-      link: "https://shahriar-ahmed-dipu.github.io/OnePage-E-commerce_website/"
-    }, 
-    {
-      id: 2,
-      title: "Biker Zone Website",
-      description: "A responsive landing page for a bike selling business with showcase of different models.",
-      technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-      image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-      category: 'web',
-      link: "https://shahriar-ahmed-dipu.github.io/biker-zone-responsive-landing-page/"
-    }
-  ];
-
-  const filters = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'web', label: 'Web' }
-  ];
-  
+  const projects: Project[] = [{
+    id: 1,
+    title: "E-Commerce Website",
+    description: "A modern one-page e-commerce website with product showcase, categories, and responsive design.",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    category: 'web',
+    link: "https://shahriar-ahmed-dipu.github.io/OnePage-E-commerce_website/"
+  }, {
+    id: 2,
+    title: "Biker Zone Website",
+    description: "A responsive landing page for a bike selling business with showcase of different models.",
+    technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+    image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    category: 'web',
+    link: "https://shahriar-ahmed-dipu.github.io/biker-zone-responsive-landing-page/"
+  }];
+  const filters = [{
+    id: 'all',
+    label: 'All Projects'
+  }, {
+    id: 'web',
+    label: 'Web'
+  }];
   const filteredProjects = activeFilter === 'all' ? projects : projects.filter(project => project.category === activeFilter);
-  
   return <section id="projects" className="relative overflow-hidden py-12 bg-gradient-to-r from-amber-50 to-yellow-50">
       <div className="section-container">
         <AnimatedSection animation="fade-in-up" className="space-y-2 mb-8">
@@ -54,26 +48,14 @@ export const Projects = () => {
 
         <AnimatedSection animation="fade-in-up" delay={100} className="mb-8">
           <div className="flex flex-wrap gap-2">
-            {filters.map(filter => (
-              <button 
-                key={filter.id} 
-                onClick={() => setActiveFilter(filter.id)} 
-                className={cn(
-                  "px-4 py-2 rounded-full text-sm font-medium transition-colors", 
-                  activeFilter === filter.id 
-                    ? "bg-primary text-primary-foreground" 
-                    : "bg-secondary hover:bg-secondary/80 text-muted-foreground"
-                )}
-              >
+            {filters.map(filter => <button key={filter.id} onClick={() => setActiveFilter(filter.id)} className={cn("px-4 py-2 rounded-full text-sm font-medium transition-colors", activeFilter === filter.id ? "bg-primary text-primary-foreground" : "bg-secondary hover:bg-secondary/80 text-muted-foreground")}>
                 {filter.label}
-              </button>
-            ))}
+              </button>)}
           </div>
         </AnimatedSection>
         
         <AnimatedSection animation="fade-in-up" delay={200} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          {filteredProjects.map(project => (
-            <div key={project.id} className="glass p-5 rounded-2xl border border-border/50 bg-white/70 transition-all hover:shadow-lg overflow-hidden group">
+          {filteredProjects.map(project => <div key={project.id} className="glass p-5 rounded-2xl border border-border/50 bg-white/70 transition-all hover:shadow-lg overflow-hidden group">
               <div className="relative h-48 rounded-xl overflow-hidden mb-4">
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform group-hover:scale-105" />
               </div>
@@ -82,28 +64,18 @@ export const Projects = () => {
               <p className="text-muted-foreground text-sm mb-3">{project.description}</p>
               
               <div className="flex flex-wrap gap-1.5 mb-4">
-                {project.technologies.map((tech, i) => (
-                  <span key={i} className="text-xs px-2 py-1 bg-primary/10 text-primary rounded-full">{tech}</span>
-                ))}
+                {project.technologies.map((tech, i) => <span key={i} className="text-xs px-2 py-1 bg-primary/10 text-primary rounded-full">{tech}</span>)}
               </div>
               
-              {project.link && (
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
-                >
+              {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">
                   Visit Project
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                     <polyline points="15 3 21 3 21 9" />
                     <line x1="10" x2="21" y1="14" y2="3" />
                   </svg>
-                </a>
-              )}
-            </div>
-          ))}
+                </a>}
+            </div>)}
         </AnimatedSection>
 
         <AnimatedSection animation="fade-in-up" delay={300} className="glass rounded-2xl p-8 border border-border/50">
@@ -113,10 +85,7 @@ export const Projects = () => {
             <div className="md:col-span-6 space-y-4">
               <div>
                 <h4 className="text-lg font-medium mb-2">Project Summary</h4>
-                <p className="text-muted-foreground text-sm">
-                  A comprehensive healthcare management system designed to streamline patient care, 
-                  appointment scheduling, and medical record management for small to medium-sized clinics.
-                </p>
+                <p className="text-muted-foreground text-sm">A modern parking spot rental system designed to connect parking spot owners with users who need temporary parking. The system allows real-time booking, anti-theft protection, and additional services like EV charging and emergency car services.</p>
               </div>
               
               <div>
@@ -214,4 +183,3 @@ export const Projects = () => {
       </div>
     </section>;
 };
-
