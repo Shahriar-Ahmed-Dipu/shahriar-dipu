@@ -64,7 +64,7 @@ export const Projects = () => {
     label: 'Database'
   }];
   const filteredProjects = activeFilter === 'all' ? projects : projects.filter(project => project.category === activeFilter);
-  return <section id="projects" className="py-24 relative overflow-hidden">
+  return <section id="projects" className="relative overflow-hidden py-0">
       <div className="section-container">
         <AnimatedSection animation="fade-in-up" className="space-y-2 mb-12">
           <h2 className="section-title">Academic Work Experience</h2>
