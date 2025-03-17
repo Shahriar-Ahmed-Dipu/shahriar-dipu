@@ -117,6 +117,10 @@ export default {
 				'reveal': {
 					from: { clipPath: 'inset(0 100% 0 0)' },
 					to: { clipPath: 'inset(0 0 0 0)' }
+				},
+				'card-hover': {
+					from: { transform: 'translateY(0)', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)' },
+					to: { transform: 'translateY(-5px)', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05)' }
 				}
 			},
 			animation: {
@@ -129,7 +133,13 @@ export default {
 				'scale-in': 'scale-in 0.3s ease-out',
 				'float': 'float 3s ease-in-out infinite',
 				'pulse-light': 'pulse-light 4s ease-in-out infinite',
-				'reveal': 'reveal 0.8s ease-out forwards'
+				'reveal': 'reveal 0.8s ease-out forwards',
+				'card-hover': 'card-hover 0.3s ease-out'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'hero-pattern': 'url(/src/assets/hero-pattern.png)',
+				'dots-pattern': 'url("data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%239C92AC\' fill-opacity=\'0.05\'%3E%3Ccircle cx=\'1\' cy=\'1\' r=\'1\'/%3E%3C/g%3E%3C/svg%3E")',
 			}
 		}
 	},

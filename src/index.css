@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -57,11 +58,11 @@
 
 @layer components {
   .glass {
-    @apply bg-white/70 backdrop-blur-md border border-white/20;
+    @apply bg-white/80 backdrop-blur-lg border border-white/40 shadow-sm;
   }
   
   .section-container {
-    @apply max-w-7xl mx-auto px-6 py-24 md:py-32;
+    @apply max-w-7xl mx-auto px-6 py-16 md:py-20;
   }
   
   .section-title {
@@ -73,7 +74,7 @@
   }
   
   .tag {
-    @apply inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground;
+    @apply inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-primary;
   }
 }
 
@@ -139,4 +140,33 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* Card hover effects */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent;
+}
+
+/* Section dividers */
+.section-divider {
+  height: 1px;
+  @apply w-full bg-gradient-to-r from-transparent via-border to-transparent opacity-70;
+}
+
+/* Remove App.css default styles that cause spacing issues */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
