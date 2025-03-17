@@ -81,17 +81,7 @@ export const Projects = () => {
           </div>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredProjects.map((project, index) => <AnimatedSection key={project.id} animation="fade-in-up" delay={100 + index * 50} className="group">
-              <div className="glass rounded-2xl overflow-hidden border border-border/50 h-full flex flex-col transition-all hover:shadow-md hover:translate-y-[-2px]">
-                
-                <div className="p-6 flex-1 flex flex-col">
-                  
-                  
-                </div>
-              </div>
-            </AnimatedSection>)}
-        </div>
+        
 
         <AnimatedSection animation="fade-in-up" delay={300} className="mt-16 glass rounded-2xl p-8 border border-border/50">
           <h3 className="text-2xl font-semibold font-display mb-6">Capstone Project</h3>
