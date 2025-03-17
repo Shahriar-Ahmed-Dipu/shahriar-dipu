@@ -113,31 +113,30 @@ export const Projects = () => {
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 text-primary shrink-0">
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
-                    <span>Patient management and electronic health records</span>
+                    <span>Parking Spot Listing & Booking – Owners can list spots, and users can rent on demand</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 text-primary shrink-0">
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
-                    <span>Appointment scheduling and reminder system</span>
+                    <span>Emergency Car Service – Users can request immediate help for car issues</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 text-primary shrink-0">
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
-                    <span>Billing and insurance claim processing</span>
+                    <span>EV Charging Stations – Enables electric vehicle users to find and book charging spots</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 text-primary shrink-0">
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
-                    <span>Secure messaging between patients and providers</span>
+                    <span>Location Lock System (Anti-Theft) – Alerts owners if a car moves unexpectedly</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 text-primary shrink-0">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>Analytics dashboard for clinic performance metrics</span>
+                    
+                    <span>
+                  </span>
                   </li>
                 </ul>
               </div>
