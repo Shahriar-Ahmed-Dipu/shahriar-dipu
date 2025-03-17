@@ -90,11 +90,10 @@ export const Projects = () => {
               
               <div>
                 <h4 className="text-lg font-medium mb-2">Project Vision</h4>
-                <p className="text-muted-foreground text-sm">To create a secure, efficient, and user-friendly parking rental solution that: 
-✔️ Helps owners list and monetize their parking spots
-✔️ Allows users to book spots per hour or second
-✔️ Enhances security with an anti-theft tracking system
-✔️ Supports EV users with charging stations
+                <p className="text-muted-foreground text-sm">To create a secure, efficient, and user-friendly parking rental solution that:  
+✔️ Helps owners list and monetize their parking spots 
+✔️ Allows users to book spots per hour or second 
+✔️ Enhances security with an anti-theft tracking system ✔️ Supports EV users with charging stations 
 ✔️ Provides an emergency car service for immediate assistance</p>
               </div>
               
