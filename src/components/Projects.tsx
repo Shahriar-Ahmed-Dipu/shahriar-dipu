@@ -1,4 +1,3 @@
-
 import { AnimatedSection } from './AnimatedSection';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
@@ -9,7 +8,7 @@ type Project = {
   description: string;
   technologies: string[];
   image: string;
-  category: 'web' | 'mobile' | 'ai' | 'database';
+  category: 'web' | 'mobile';
   link?: string;
 };
 
@@ -22,7 +21,7 @@ export const Projects = () => {
       title: "E-Commerce Website",
       description: "A modern one-page e-commerce website with product showcase, categories, and responsive design.",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      image: "https://images.unsplash.com/photo-1621570073702-43c600be192d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
       category: 'web',
       link: "https://shahriar-ahmed-dipu.github.io/OnePage-E-commerce_website/"
     }, 
@@ -34,53 +33,26 @@ export const Projects = () => {
       image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
       category: 'web',
       link: "https://shahriar-ahmed-dipu.github.io/biker-zone-responsive-landing-page/"
-    },
-    {
-      id: 3,
-      title: "Hospital Management System",
-      description: "A comprehensive solution for managing patient records, appointments, and hospital resources.",
-      technologies: ["PHP", "MySQL", "JavaScript", "CSS"],
-      image: "https://images.unsplash.com/photo-1603384737051-53a4a1fb5d85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-      category: 'database'
-    },
-    {
-      id: 4,
-      title: "AI-Powered Content Generator",
-      description: "An application that uses AI to generate content for blogs, articles, and social media posts.",
-      technologies: ["Python", "TensorFlow", "React", "Flask"],
-      image: "https://images.unsplash.com/photo-1625014618611-fb129c2a9ee7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-      category: 'ai'
-    },
-    {
-      id: 5,
-      title: "Budget Tracker Mobile App",
-      description: "A mobile application to help users track expenses, set budgets, and visualize spending patterns.",
-      technologies: ["React Native", "Firebase", "JavaScript"],
-      image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-      category: 'mobile'
-    },
+    }
   ];
 
   const filters = [
     { id: 'all', label: 'All Projects' },
-    { id: 'web', label: 'Web' },
-    { id: 'mobile', label: 'Mobile' },
-    { id: 'ai', label: 'AI' },
-    { id: 'database', label: 'Database' }
+    { id: 'web', label: 'Web' }
   ];
   
   const filteredProjects = activeFilter === 'all' ? projects : projects.filter(project => project.category === activeFilter);
   
-  return <section id="projects" className="relative overflow-hidden py-16 bg-gradient-to-r from-amber-50 to-yellow-50">
+  return <section id="projects" className="relative overflow-hidden py-12 bg-gradient-to-r from-amber-50 to-yellow-50">
       <div className="section-container">
-        <AnimatedSection animation="fade-in-up" className="space-y-2 mb-12">
+        <AnimatedSection animation="fade-in-up" className="space-y-2 mb-8">
           <h2 className="section-title">Academic Work Experience</h2>
           <p className="section-subtitle">
             A collection of projects showcasing my technical skills and problem-solving abilities
           </p>
         </AnimatedSection>
 
-        <AnimatedSection animation="fade-in-up" delay={100} className="mb-12">
+        <AnimatedSection animation="fade-in-up" delay={100} className="mb-8">
           <div className="flex flex-wrap gap-2">
             {filters.map(filter => (
               <button 
@@ -99,7 +71,7 @@ export const Projects = () => {
           </div>
         </AnimatedSection>
         
-        <AnimatedSection animation="fade-in-up" delay={200} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <AnimatedSection animation="fade-in-up" delay={200} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {filteredProjects.map(project => (
             <div key={project.id} className="glass p-5 rounded-2xl border border-border/50 bg-white/70 transition-all hover:shadow-lg overflow-hidden group">
               <div className="relative h-48 rounded-xl overflow-hidden mb-4">
@@ -134,7 +106,7 @@ export const Projects = () => {
           ))}
         </AnimatedSection>
 
-        <AnimatedSection animation="fade-in-up" delay={300} className="mt-16 glass rounded-2xl p-8 border border-border/50">
+        <AnimatedSection animation="fade-in-up" delay={300} className="glass rounded-2xl p-8 border border-border/50">
           <h3 className="text-2xl font-semibold font-display mb-6">Capstone Project</h3>
           
           <div className="grid md:grid-cols-12 gap-8">
@@ -242,3 +214,4 @@ export const Projects = () => {
       </div>
     </section>;
 };
+

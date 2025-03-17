@@ -1,8 +1,10 @@
+
 import { AnimatedSection } from './AnimatedSection';
+
 export const Professional = () => {
-  return <section id="professional" className="bg-secondary/50 relative overflow-hidden py-0">
+  return <section id="professional" className="bg-secondary/50 relative overflow-hidden py-8">
       <div className="section-container">
-        <AnimatedSection animation="fade-in-up" className="space-y-2 mb-12">
+        <AnimatedSection animation="fade-in-up" className="space-y-2 mb-8">
           <h2 className="section-title">Professional Summary</h2>
           <p className="section-subtitle">
             Exploring my professional contributions, achievements, and community service
@@ -48,52 +50,10 @@ export const Professional = () => {
                   </ul>
                 </div>
               </div>
-              
-              
-            </div>
-            
-            <h3 className="text-2xl font-semibold font-display pt-4">Professional Work Samples</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="glass p-5 rounded-2xl border border-border/50 relative overflow-hidden group">
-                <div className="relative z-10">
-                  <h4 className="font-medium">E-Commerce Website Redesign</h4>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Redesigned the user interface for an e-commerce platform to improve user experience and conversion rates.
-                  </p>
-                  <button className="mt-4 text-sm font-medium text-primary inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
-                    <span>View Project</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </button>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-              </div>
-              
-              <div className="glass p-5 rounded-2xl border border-border/50 relative overflow-hidden group">
-                <div className="relative z-10">
-                  <h4 className="font-medium">Mobile App UI Design</h4>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Created a clean, intuitive user interface for a health tracking mobile application.
-                  </p>
-                  <button className="mt-4 text-sm font-medium text-primary inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
-                    <span>View Project</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </button>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-              </div>
             </div>
           </AnimatedSection>
 
           <AnimatedSection animation="fade-in-up" delay={200} className="md:col-span-5 space-y-8">
-            
-            
-            
             <h3 className="text-2xl font-semibold font-display">Awards & Recognition</h3>
             <div className="glass p-6 rounded-2xl border border-border/50">
               <div className="space-y-5">
@@ -134,9 +94,6 @@ export const Professional = () => {
                 </div>
               </div>
             </div>
-            
-            
-            
           </AnimatedSection>
         </div>
       </div>
