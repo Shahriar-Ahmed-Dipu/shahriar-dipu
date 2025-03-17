@@ -16,7 +16,7 @@ export const Education = () => {
     period: "2023",
     description: "Fundamentals of artificial intelligence, machine learning algorithms, and neural networks."
   }];
-  return <section id="education" className="py-24 bg-secondary/50 relative overflow-hidden">
+  return <section id="education" className="bg-secondary/50 relative overflow-hidden py-0">
       <div className="section-container">
         <AnimatedSection animation="fade-in-up" className="space-y-2 mb-12">
           <h2 className="section-title">Academic Credentials</h2>

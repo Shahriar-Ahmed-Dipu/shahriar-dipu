@@ -1,9 +1,6 @@
-
 import { AnimatedSection } from './AnimatedSection';
-
 export const About = () => {
-  return (
-    <section id="about" className="py-24 relative overflow-hidden">
+  return <section id="about" className="relative overflow-hidden py-0">
       <div className="section-container">
         <AnimatedSection animation="fade-in-up" className="space-y-2 mb-12">
           <h2 className="section-title">About Me</h2>
@@ -13,11 +10,7 @@ export const About = () => {
         </AnimatedSection>
 
         <div className="grid md:grid-cols-12 gap-8 md:gap-12">
-          <AnimatedSection 
-            animation="fade-in-up" 
-            delay={100}
-            className="md:col-span-7 space-y-6"
-          >
+          <AnimatedSection animation="fade-in-up" delay={100} className="md:col-span-7 space-y-6">
             <h3 className="text-2xl font-semibold font-display">Bio</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -46,11 +39,7 @@ export const About = () => {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection 
-            animation="fade-in-up" 
-            delay={200}
-            className="md:col-span-5"
-          >
+          <AnimatedSection animation="fade-in-up" delay={200} className="md:col-span-5">
             <div className="glass p-6 rounded-2xl space-y-6 border border-border/50">
               <h3 className="text-xl font-semibold font-display">Skills</h3>
               
@@ -104,6 +93,5 @@ export const About = () => {
           </AnimatedSection>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
