@@ -1,6 +1,5 @@
 import { ResumeButton } from './ResumeButton';
 import { Linkedin, Instagram } from "lucide-react";
-
 export const Footer = () => {
   return <footer id="contact" className="bg-gradient-to-r from-blue-50 to-indigo-50 relative overflow-hidden py-12">
       <div className="section-container">
@@ -115,9 +114,7 @@ export const Footer = () => {
         
         <div className="pt-16 flex flex-col md:flex-row justify-between items-center gap-4 text-muted-foreground text-sm border-t border-border/50 mt-16">
           <div className="flex flex-col md:flex-row items-center gap-4">
-            <a href="#" className="font-display text-lg font-semibold tracking-tight text-foreground">
-              Md Nazim Uddin
-            </a>
+            <a href="#" className="font-display text-lg font-semibold tracking-tight text-foreground">Shahriar Ahmed Dipu</a>
             <span className="hidden md:inline text-muted-foreground">|</span>
             <span>Software Developer</span>
           </div>
