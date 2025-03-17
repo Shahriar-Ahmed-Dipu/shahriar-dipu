@@ -98,7 +98,7 @@ export const Projects = () => {
                 <div className="flex flex-wrap gap-2">
                   <span className="tag">HTML</span>
                   <span className="tag">CSS</span>
-                  <span className="tag">TAILWIND</span>
+                  <span className="tag">Tailwind</span>
                   <span className="tag">MongoDB</span>
                   <span className="tag">PHP</span>
                 </div>
