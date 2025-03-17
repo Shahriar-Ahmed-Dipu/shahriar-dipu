@@ -1,6 +1,8 @@
+
 import { AnimatedSection } from './AnimatedSection';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
+
 type Project = {
   id: number;
   title: string;
@@ -8,63 +10,68 @@ type Project = {
   technologies: string[];
   image: string;
   category: 'web' | 'mobile' | 'ai' | 'database';
+  link?: string;
 };
+
 export const Projects = () => {
   const [activeFilter, setActiveFilter] = useState<string>('all');
-  const projects: Project[] = [{
-    id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce website with product management, cart functionality, and secure checkout process.",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
-    image: "https://images.unsplash.com/photo-1621570073702-43c600be192d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-    category: 'web'
-  }, {
-    id: 2,
-    title: "Hospital Management System",
-    description: "A comprehensive solution for managing patient records, appointments, and hospital resources.",
-    technologies: ["PHP", "MySQL", "JavaScript", "CSS"],
-    image: "https://images.unsplash.com/photo-1603384737051-53a4a1fb5d85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-    category: 'database'
-  }, {
-    id: 3,
-    title: "AI-Powered Content Generator",
-    description: "An application that uses AI to generate content for blogs, articles, and social media posts.",
-    technologies: ["Python", "TensorFlow", "React", "Flask"],
-    image: "https://images.unsplash.com/photo-1625014618611-fb129c2a9ee7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-    category: 'ai'
-  }, {
-    id: 4,
-    title: "Budget Tracker Mobile App",
-    description: "A mobile application to help users track expenses, set budgets, and visualize spending patterns.",
-    technologies: ["React Native", "Firebase", "JavaScript"],
-    image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-    category: 'mobile'
-  }, {
-    id: 5,
-    title: "Student Portal",
-    description: "A comprehensive portal for students to access course materials, submit assignments, and track grades.",
-    technologies: ["JavaScript", "PHP", "MySQL", "HTML/CSS"],
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-    category: 'web'
-  }];
-  const filters = [{
-    id: 'all',
-    label: 'All Projects'
-  }, {
-    id: 'web',
-    label: 'Web'
-  }, {
-    id: 'mobile',
-    label: 'Mobile'
-  }, {
-    id: 'ai',
-    label: 'AI'
-  }, {
-    id: 'database',
-    label: 'Database'
-  }];
+  
+  const projects: Project[] = [
+    {
+      id: 1,
+      title: "E-Commerce Website",
+      description: "A modern one-page e-commerce website with product showcase, categories, and responsive design.",
+      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      image: "https://images.unsplash.com/photo-1621570073702-43c600be192d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+      category: 'web',
+      link: "https://shahriar-ahmed-dipu.github.io/OnePage-E-commerce_website/"
+    }, 
+    {
+      id: 2,
+      title: "Biker Zone Website",
+      description: "A responsive landing page for a bike selling business with showcase of different models.",
+      technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+      image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+      category: 'web',
+      link: "https://shahriar-ahmed-dipu.github.io/biker-zone-responsive-landing-page/"
+    },
+    {
+      id: 3,
+      title: "Hospital Management System",
+      description: "A comprehensive solution for managing patient records, appointments, and hospital resources.",
+      technologies: ["PHP", "MySQL", "JavaScript", "CSS"],
+      image: "https://images.unsplash.com/photo-1603384737051-53a4a1fb5d85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+      category: 'database'
+    },
+    {
+      id: 4,
+      title: "AI-Powered Content Generator",
+      description: "An application that uses AI to generate content for blogs, articles, and social media posts.",
+      technologies: ["Python", "TensorFlow", "React", "Flask"],
+      image: "https://images.unsplash.com/photo-1625014618611-fb129c2a9ee7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+      category: 'ai'
+    },
+    {
+      id: 5,
+      title: "Budget Tracker Mobile App",
+      description: "A mobile application to help users track expenses, set budgets, and visualize spending patterns.",
+      technologies: ["React Native", "Firebase", "JavaScript"],
+      image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+      category: 'mobile'
+    },
+  ];
+
+  const filters = [
+    { id: 'all', label: 'All Projects' },
+    { id: 'web', label: 'Web' },
+    { id: 'mobile', label: 'Mobile' },
+    { id: 'ai', label: 'AI' },
+    { id: 'database', label: 'Database' }
+  ];
+  
   const filteredProjects = activeFilter === 'all' ? projects : projects.filter(project => project.category === activeFilter);
-  return <section id="projects" className="relative overflow-hidden py-0">
+  
+  return <section id="projects" className="relative overflow-hidden py-16 bg-gradient-to-r from-amber-50 to-yellow-50">
       <div className="section-container">
         <AnimatedSection animation="fade-in-up" className="space-y-2 mb-12">
           <h2 className="section-title">Academic Work Experience</h2>
@@ -75,13 +82,57 @@ export const Projects = () => {
 
         <AnimatedSection animation="fade-in-up" delay={100} className="mb-12">
           <div className="flex flex-wrap gap-2">
-            {filters.map(filter => <button key={filter.id} onClick={() => setActiveFilter(filter.id)} className={cn("px-4 py-2 rounded-full text-sm font-medium transition-colors", activeFilter === filter.id ? "bg-primary text-primary-foreground" : "bg-secondary hover:bg-secondary/80 text-muted-foreground")}>
+            {filters.map(filter => (
+              <button 
+                key={filter.id} 
+                onClick={() => setActiveFilter(filter.id)} 
+                className={cn(
+                  "px-4 py-2 rounded-full text-sm font-medium transition-colors", 
+                  activeFilter === filter.id 
+                    ? "bg-primary text-primary-foreground" 
+                    : "bg-secondary hover:bg-secondary/80 text-muted-foreground"
+                )}
+              >
                 {filter.label}
-              </button>)}
+              </button>
+            ))}
           </div>
         </AnimatedSection>
-
         
+        <AnimatedSection animation="fade-in-up" delay={200} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {filteredProjects.map(project => (
+            <div key={project.id} className="glass p-5 rounded-2xl border border-border/50 bg-white/70 transition-all hover:shadow-lg overflow-hidden group">
+              <div className="relative h-48 rounded-xl overflow-hidden mb-4">
+                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform group-hover:scale-105" />
+              </div>
+              
+              <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
+              <p className="text-muted-foreground text-sm mb-3">{project.description}</p>
+              
+              <div className="flex flex-wrap gap-1.5 mb-4">
+                {project.technologies.map((tech, i) => (
+                  <span key={i} className="text-xs px-2 py-1 bg-primary/10 text-primary rounded-full">{tech}</span>
+                ))}
+              </div>
+              
+              {project.link && (
+                <a 
+                  href={project.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                >
+                  Visit Project
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" x2="21" y1="14" y2="3" />
+                  </svg>
+                </a>
+              )}
+            </div>
+          ))}
+        </AnimatedSection>
 
         <AnimatedSection animation="fade-in-up" delay={300} className="mt-16 glass rounded-2xl p-8 border border-border/50">
           <h3 className="text-2xl font-semibold font-display mb-6">Capstone Project</h3>

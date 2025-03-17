@@ -1,6 +1,7 @@
 import { AnimatedSection } from './AnimatedSection';
+
 export const About = () => {
-  return <section id="about" className="relative overflow-hidden py-0">
+  return <section id="about" className="relative overflow-hidden py-16">
       <div className="section-container">
         <AnimatedSection animation="fade-in-up" className="space-y-2 mb-12">
           <h2 className="section-title">About Me</h2>

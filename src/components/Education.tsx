@@ -12,11 +12,6 @@ export const Education = () => {
     institution: "Soft Tech IT, Bangladesh",
     period: "2022",
     description: "HTML5, CSS3, JavaScript, and responsive design principles for modern web applications."
-  }, {
-    title: "Introduction to AI and Machine Learning",
-    institution: "Online Certification",
-    period: "2023",
-    description: "Fundamentals of artificial intelligence, machine learning algorithms, and neural networks."
   }];
 
   return <section id="education" className="bg-gradient-to-r from-purple-50 to-indigo-50 relative overflow-hidden py-16">
@@ -152,19 +147,6 @@ export const Education = () => {
                     <div>
                       <p className="font-medium text-sm">UI/UX Design Fundamentals</p>
                       <p className="text-xs text-muted-foreground">Design principles and user experience</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full flex items-center justify-center bg-primary/10 text-primary shadow-sm">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6" />
-                        <line x1="2" x2="22" y1="20" y2="20" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-medium text-sm">Responsive Web Design</p>
-                      <p className="text-xs text-muted-foreground">Mobile-first and adaptive layouts</p>
                     </div>
                   </div>
                 </div>

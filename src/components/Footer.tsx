@@ -1,4 +1,3 @@
-
 import { ResumeButton } from './ResumeButton';
 
 export const Footer = () => {
@@ -33,7 +32,7 @@ export const Footer = () => {
                 </div>
                 <div>
                   <p className="text-sm font-medium">Email</p>
-                  <p className="text-sm text-muted-foreground">nazim.uddin@gmail.com</p>
+                  <p className="text-sm text-muted-foreground">shahriardipu@gmail.com</p>
                 </div>
               </div>
               
